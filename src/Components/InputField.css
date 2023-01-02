@@ -1,0 +1,19 @@
+.label {
+  font-size: x-large;
+  margin-right: 1rem;
+}
+
+.input {
+  font-size: larger;
+  min-height: 5vh;
+  border-radius: 15px;
+}
+
+.inputField-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: antiquewhite;
+  padding: 2rem;
+  justify-content: center;
+}
