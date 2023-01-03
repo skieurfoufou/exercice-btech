@@ -1,0 +1,11 @@
+.usersList-title {
+  font-size: xx-large;
+  color: blueviolet;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.usersList-container {
+  background-color: rgb(218, 123, 227);
+}

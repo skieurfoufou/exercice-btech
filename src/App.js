@@ -1,28 +1,28 @@
-import logo from "./logo.svg";
 import React, { useState } from "react";
 import "./App.css";
-import InputField from "./Components/InputField";
+import Header from "./Components/Header/Header";
+import InputField from "./Components/InputField/InputField";
+import UsersList from "./Components/UserList/UsersList";
+
 import { createUser } from "./Api/user.api";
 
 function App() {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
     let user = { name, age };
     console.log(user);
-    createUser(user);
+    await createUser(user);
+
     setName("");
     setAge("");
   };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <div className="App-bonjour">Hello</div>
+      <Header></Header>
+      <div className="App-hello">Hello</div>
       <div>
         <InputField
           name="What's your name ?"
@@ -43,6 +43,8 @@ function App() {
       <h2>
         You are {name} and you are {age} years old
       </h2>
+      <hr></hr>
+      <UsersList></UsersList>
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.ulContainer {
+  list-style-type: none;
+}
+.liContainer {
+  font-size: x-large;
+  color: purple;
+  text-decoration: dotted;
+  font-weight: bold;
+  text-transform: capitalize;
+}
